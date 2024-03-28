@@ -2,7 +2,7 @@
 resource "aws_route_table" "rtablen" {
   vpc_id = aws_vpc.vpctest.id
 
-    route {
+  route {
     cidr_block = var.egress_route
     gateway_id = aws_internet_gateway.igwn.id
   }
